@@ -1,14 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Main() {
   return (
-    <div>
-        <div>
-          
-        </div>
-
+    <div className="h-screen flex justify-center items-center">
+      
     </div>
-  )
+  );
 }
 
-export default Main
+export default Main;

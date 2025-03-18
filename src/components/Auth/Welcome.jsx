@@ -2,7 +2,9 @@ import React from 'react'
 
 function Welcome() {
   return (
-    <div>Welcome</div>
+    <div>
+        <div className='text-4xl'>Welcome to Createathon</div>
+    </div>
   )
 }
 

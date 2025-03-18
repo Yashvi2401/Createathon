@@ -1,14 +1,19 @@
-import React from 'react'
-import Main from './pages/Main'
+import React from "react";
+import Main from "./pages/Main";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AuthPage from "./pages/AuthPage";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-        <Main/>
-    </h1>
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/authentication" element={<AuthPage/>} />
+        <Route path="/dashboard" element={<Dashboard/>}/>
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
